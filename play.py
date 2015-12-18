@@ -1,28 +1,20 @@
-#/bin/python3
-#print text:
-#print("")
-#wait for user to hit enter:
-#input()
-#set a variable:
-#variable name = value
-#example:
-#x=10
-#yhd="Hello"
+import random
 def clear():
     print("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
 def printc(text):
     clear()
     print(text)
-printc(":-) !!!!!!! aeofhadigfhjkrbfhbljdbshgr")
+printc("Hello!")
 input()
-printc("Please type a number")
-number=int(input())
-printc(number)
+printc("I'm mothebad!")
 input()
-if number<100 and number>0:
-    printc(":-)")
-elif number<0:
-    printc(":-(")
+printc("Type a number between 1 and 10")
+input()
+randomnum=-1
+while randomnum<0 or randomnum>10:
+    randomnum=int(input())
+guess=random.randint(1,10)
+if randomnum==guess:
+    print("You guessed it! :-)")
 else:
-    printc(":-|")
-input()
+    print("You failed :-(")
